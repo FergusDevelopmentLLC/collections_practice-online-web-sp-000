@@ -20,9 +20,11 @@ end
 #puts sort_array_char_count(["aaasssssssss", "bbbbb", "cccccc"])
 
 def swap_elements(array)
-  [array[0], array[2], array[1]]
+  # [array[0], array[2], array[1]]
+  array[1], array[2] = array[2], array[1]
+  array
 end
-#puts swap_elements([1, 2, 3]).inspect
+puts swap_elements([1, 2, 3]).inspect
 
 def reverse_array(array)
   array.reverse

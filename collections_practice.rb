@@ -58,4 +58,15 @@ def add_s(array)
   end
 end
 
-puts add_s(["one", "two", "three"])
+def swap_elements_from_to(array, index, destination_index)
+  # copy = array.map { |item| item}
+  # copy[destination_index] = array[index]
+  # copy[index] = array[destination_index]
+  # copy
+  array[index], array[destination_index] = array[destination_index], array[index]
+  array
+end
+
+puts swap_elements_from_to(["a", "b", "c"],1,0).inspect #=> ["c", "b", "a"]
+
+#puts add_s(["one", "two", "three"])
